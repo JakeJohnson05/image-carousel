@@ -62,9 +62,20 @@ div.carousel {
 			$indexIndexSize: 16px;
 			height: $indexIndexSize;
 			width: $indexIndexSize;
+			cursor: pointer;
 			border-radius: 50%;
 			margin: 4px;
 			background: #e6e6e650;
+			border: 2px solid #e6e6e600;
+			$indexBtnTransitionT: .3s;
+			transition: height $indexBtnTransitionT, width $indexBtnTransitionT, margin $indexBtnTransitionT, background $indexBtnTransitionT, border $indexBtnTransitionT;
+			&:hover { border: 2px solid #e6e6e6 }
+			&.current {
+				margin: 0;
+				height: 18px;
+				width: 18px;
+				background: #e6e6e6;
+			}
 		}
 	}
 
