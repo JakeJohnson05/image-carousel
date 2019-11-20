@@ -1,15 +1,15 @@
 div.carousel {
-	margin: auto;
+	margin: 0 auto 16px;
 	width: 100%;
-	height: 60vw;
-	min-height: 50vh;
+	height: 30vw;
+	min-height: 40vh;
 	max-height: 80vh;
 	overflow: hidden;
 	position: relative;
-	
+
 	& > div.view-port {
-		width: inherit;
-		height: inherit;
+		width: 100%;
+		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -33,7 +33,7 @@ div.carousel {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
-		width: inherit;
+		width: 100%;
 		top: 50%;
 		transform: translateY(-50%);
 		& > div.carousel-btn {
@@ -120,3 +120,10 @@ div.header {
 		}
 	}
 }
+
+h1, h3 {
+	text-align: center;
+	font-weight: initial;
+}
+h1 { margin-bottom: 0 }
+h3 { margin-top: 0 }
