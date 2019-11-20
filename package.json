@@ -24,13 +24,14 @@
     "@angular/platform-browser": "~8.2.13",
     "@angular/platform-browser-dynamic": "~8.2.13",
     "@angular/router": "~8.2.13",
+    "@types/node": "^12.12.11",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
     "http": "0.0.0",
     "path": "^0.12.7",
     "tslib": "^1.10.0",
-    "zone.js": "^0.10.2",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "zone.js": "^0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.16",
@@ -41,7 +42,6 @@
     "@types/helmet": "0.0.45",
     "@types/jasmine": "^3.4.6",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.12.11",
     "codelyzer": "^5.0.0",
     "jasmine-core": "^3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
