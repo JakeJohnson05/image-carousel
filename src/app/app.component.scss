@@ -6,6 +6,7 @@ div.carousel {
 	max-height: 80vh;
 	overflow: hidden;
 	position: relative;
+	
 	& > div.view-port {
 		width: inherit;
 		height: inherit;
@@ -48,6 +49,10 @@ div.carousel {
 			&.left { border-radius: 0 $carouselBtnRadius $carouselBtnRadius 0 }
 			&.right { border-radius: $carouselBtnRadius 0 0 $carouselBtnRadius }
 			&:focus { outline: none }
+			&::selection {
+				background: #e6e6e600;
+				color: #000;
+			}
 		}
 	}
 
@@ -79,9 +84,7 @@ div.carousel {
 		}
 	}
 
-	&:hover {
-		& > div.carousel-ctrl > div.carousel-btn { background: #e6e6e6 }
-	}
+	&:hover > div.carousel-ctrl > div.carousel-btn { background: #e6e6e6 }
 }
 
 div.header {
