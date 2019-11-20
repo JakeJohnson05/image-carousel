@@ -2,6 +2,7 @@
 
 This is an example for creating an image carousel with [Angular](https://angular.io) version 8.3.16.
 
+> Images courtesy of [Unsplash](https://unsplash.com)
 ## Development & Testing
 
 This application in its entirety can be served locally in development by running:
