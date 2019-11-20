@@ -1,27 +1,32 @@
 # ImageCarousel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.16.
+This is an example for creating an image carousel with [Angular](https://angular.io) version 8.3.16.
 
-## Development server
+## Development & Testing
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This application in its entirety can be served locally in development by running:
+```bash
+npm run angular
+```
+The development server runs at `http://localhost:5000`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Build the application with:
+```bash
+npm run build:dev	# Builds the application with development configuration
+npm run build			# Builds the application for production
+```
 
-## Running unit tests
+## Production Server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+After building, the compiled angular application is served using [Express](http://expressjs.com). The Express server is written in Typescript and must be compiled with tsc. Do not run node . to create the server.
 
-## Running end-to-end tests
+Start the application using the npm start script:
+```bash
+npm start
+# or
+npm run start
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The application must be run using the npm start script as the Express server is compiled to JS when the start script is run.
