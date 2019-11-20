@@ -29,7 +29,8 @@
     "http": "0.0.0",
     "path": "^0.12.7",
     "tslib": "^1.10.0",
-    "zone.js": "^0.10.2"
+    "zone.js": "^0.10.2",
+    "typescript": "~3.5.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.16",
@@ -51,7 +52,6 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
     "ts-node": "^8.5.2",
-    "tslint": "^5.20.1",
-    "typescript": "~3.5.3"
+    "tslint": "^5.20.1"
   }
 }
