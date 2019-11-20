@@ -5,7 +5,7 @@
   "scripts": {
     "tsc": "tsc",
     "ng": "ng",
-    "prestart": "tsc",
+    "prestart": "tsc -p tsconfig.server.json",
     "start": "node .",
     "angular": "ng serve --port 5000",
     "build": "ng build --prod",
