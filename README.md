@@ -15,7 +15,7 @@ The development server runs at `http://localhost:5000`.
 Build the application with:
 ```bash
 npm run build:dev	# Builds the application with development configuration
-npm run build			# Builds the application for production
+npm run build		# Builds the application for production
 ```
 
 ## Production Server
