@@ -31,7 +31,7 @@ export class AppComponent {
   }
 
   /** Get the state of an image by its index */
-  getState(index: number): 'right'|'left'|'focus' {
+  getState(index: number): 'right' | 'left' | 'focus' {
     if (this.currentImage === 0 && index === this.carouselImages.length - 1) return 'left';
     if (this.currentImage === this.carouselImages.length - 1 && index === 0) return 'right';
     if (index < this.currentImage) return 'left';
@@ -39,7 +39,8 @@ export class AppComponent {
     return 'focus';
   }
 
-  changeImage(direction: -1|1 = 1): void {
+  /** Change the current image by 1 in either direction */
+  changeImage(direction: number): void {
     if (direction < 0 && this.currentImage === 0) this.currentImage = this.carouselImages.length - 1;
     else if (direction > 0 && this.currentImage + 1 >= this.carouselImages.length) this.currentImage = 0;
     else this.currentImage += direction;
