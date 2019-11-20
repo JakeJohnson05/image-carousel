@@ -1,0 +1,33 @@
+div.header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 8px 16px 0;
+	padding: 0 4px 4px;
+	border-bottom: 1px solid #888;
+
+	& > div:first-child {
+		font-size: 130%;
+		
+	}
+	& > div:nth-child(2) {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-end;
+		& > a {
+			padding: 4px 8px;
+			margin: 0 4px;
+			border-radius: 4px;
+			text-decoration: none;
+			color: inherit;
+			background: #e6e6e600;
+			&:not(.icon) {
+				transition: background .2s;
+				&:hover { background: #e6e6e6 }
+			}
+			& > img {
+				width: 32px;
+			}
+		}
+	}
+}

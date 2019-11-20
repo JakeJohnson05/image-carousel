@@ -21,11 +21,15 @@ app.use(helmet());
 ////////////////////////////////////////////////
 // Routes
 //
-// point static paths to dist
+// Point static paths to dist
 app.use(express.static(join(__dirname, 'src/')));
-// Catch all routes and return the index file
-app.get('*', (req, res) => {
+// Display the main page
+app.get('/', (_, res) => {
   res.sendFile(join(__dirname, 'src/index.html'));
+})
+// Catch all other routes and return to root
+app.get('*', (_, res) => {
+  res.redirect('/');
 });
 
 ////////////////////////////////////////////////////////////////////////
