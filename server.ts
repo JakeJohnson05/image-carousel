@@ -1,8 +1,8 @@
 /*
-This is the entry point to the program.
-
-It creates the application instance which serves the angular application.
-*/
+ * This is the entry point to the program.
+ *
+ * It creates the application instance which serves the angular application.
+ */
 
 import * as express from 'express';
 import { join } from 'path';
