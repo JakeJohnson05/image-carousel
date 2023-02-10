@@ -7,19 +7,21 @@ div.carousel {
 	overflow: hidden;
 	position: relative;
 
-	& > div.view-port {
+	&>div.view-port {
 		width: 100%;
 		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
 		overflow: hidden;
-		& > div.img-ctn {
+
+		&>div.img-ctn {
 			position: absolute;
 			top: 0;
 			width: inherit;
 			height: inherit;
-			& > img {
+
+			&>img {
 				width: inherit;
 				height: inherit;
 				object-fit: cover;
@@ -28,7 +30,7 @@ div.carousel {
 		}
 	}
 
-	& > div.carousel-ctrl {
+	&>div.carousel-ctrl {
 		position: absolute;
 		display: flex;
 		flex-flow: row nowrap;
@@ -36,7 +38,8 @@ div.carousel {
 		width: 100%;
 		top: 50%;
 		transform: translateY(-50%);
-		& > div.carousel-btn {
+
+		&>div.carousel-btn {
 			height: 120px;
 			display: flex;
 			align-items: center;
@@ -46,9 +49,19 @@ div.carousel {
 			background: #e6e6e650;
 			$carouselBtnRadius: 8px;
 			transition: background .3s;
-			&.left { border-radius: 0 $carouselBtnRadius $carouselBtnRadius 0 }
-			&.right { border-radius: $carouselBtnRadius 0 0 $carouselBtnRadius }
-			&:focus { outline: none }
+
+			&.left {
+				border-radius: 0 $carouselBtnRadius $carouselBtnRadius 0
+			}
+
+			&.right {
+				border-radius: $carouselBtnRadius 0 0 $carouselBtnRadius
+			}
+
+			&:focus {
+				outline: none
+			}
+
 			&::selection {
 				background: #e6e6e600;
 				color: #000;
@@ -56,14 +69,15 @@ div.carousel {
 		}
 	}
 
-	& > div.carousel-index {
+	&>div.carousel-index {
 		position: absolute;
 		display: flex;
 		flex-flow: row nowrap;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		& > div.index-btn {
+
+		&>div.index-btn {
 			$indexIndexSize: 16px;
 			height: $indexIndexSize;
 			width: $indexIndexSize;
@@ -74,7 +88,11 @@ div.carousel {
 			border: 2px solid #e6e6e600;
 			$indexBtnTransitionT: .3s;
 			transition: height $indexBtnTransitionT, width $indexBtnTransitionT, margin $indexBtnTransitionT, background $indexBtnTransitionT, border $indexBtnTransitionT;
-			&:hover { border: 2px solid #e6e6e6 }
+
+			&:hover {
+				border: 2px solid #e6e6e6
+			}
+
 			&.current {
 				margin: 0;
 				height: 18px;
@@ -84,7 +102,9 @@ div.carousel {
 		}
 	}
 
-	&:hover > div.carousel-ctrl > div.carousel-btn { background: #e6e6e6 }
+	&:hover>div.carousel-ctrl>div.carousel-btn {
+		background: #e6e6e6
+	}
 }
 
 div.header {
@@ -95,35 +115,49 @@ div.header {
 	padding: 0 4px 4px;
 	border-bottom: 1px solid #888;
 
-	& > div:first-child {
+	&>div:first-child {
 		font-size: 130%;
-		
+
 	}
-	& > div:nth-child(2) {
+
+	&>div:nth-child(2) {
 		display: flex;
 		flex-flow: row nowrap;
 		align-items: flex-end;
-		& > a {
+
+		&>a {
 			padding: 4px 8px;
 			margin: 0 4px;
 			border-radius: 4px;
 			text-decoration: none;
 			color: inherit;
 			background: #e6e6e600;
+
 			&:not(.icon) {
 				transition: background .2s;
-				&:hover { background: #e6e6e6 }
+
+				&:hover {
+					background: #e6e6e6
+				}
 			}
-			& > img {
+
+			&>img {
 				width: 32px;
 			}
 		}
 	}
 }
 
-h1, h3 {
+h1,
+h3 {
 	text-align: center;
 	font-weight: initial;
 }
-h1 { margin-bottom: 0 }
-h3 { margin-top: 0 }
+
+h1 {
+	margin-bottom: 0
+}
+
+h3 {
+	margin-top: 0
+}

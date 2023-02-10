@@ -1,5 +1,5 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
-import { transition, trigger, state, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-root',

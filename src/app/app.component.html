@@ -1,5 +1,5 @@
 <div class="header">
-	<div>Angular <br/>Image Carousel</div>
+	<div>Angular <br />Image Carousel</div>
 	<div>
 		<a href="https://www.jakejohnson.pro" target="_blank">Jake Johnson</a>
 		<a href="https://github.com/JakeJohnson05/image-carousel" target="_blank" class="icon">
@@ -21,6 +21,7 @@
 		<div class="carousel-btn right" (click)="changeImage(1)">keyboard_arrow_right</div>
 	</div>
 	<div class="carousel-index">
-		<div *ngFor="let imagePath of carouselImages; index as i" [ngClass]="{'index-btn':true, 'current':i == currentImage}" (click)="currentImage = i"></div>
+		<div *ngFor="let imagePath of carouselImages; index as i"
+			[ngClass]="{'index-btn':true, 'current':i == currentImage}" (click)="currentImage = i"></div>
 	</div>
 </div>
